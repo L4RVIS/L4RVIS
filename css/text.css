@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+ 
+    border:1px solid transparent;
+}
+main{
+    display: initial;
+    
+    
+}
+
+.center{
+position:absolute;
+
+background-color: white;
+width: 25vw;
+height: auto;
+
+text-align: justify;
+margin-left: 25%;
+margin-top: 20.5%;
+padding: 2%;
+
+
+transform: translate(-50%, -50%) rotate(-90deg);
+
+z-index: 10;
+
+}
+
+.center1{
+    position:absolute;
+    
+    background-color: white;
+    width: 25vw;
+    height: auto;
+    
+    text-align: justify;
+    margin-left: 75%;
+    margin-top: 55.5%;
+    padding: 2%;
+    
+    
+    transform: translate(-50%, -50%) rotate(-90deg);
+    
+    z-index: 10;
+    
+    }
+.center p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+}
+
+.center1 p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+}
+
+
+
+.center2{
+    position:absolute;
+    
+    background-color: white;
+    width: 25vw;
+    height: auto;
+    
+    text-align: justify;
+    margin-left: 25%;
+    margin-top: 90.5%;
+    padding: 2%;
+    
+    
+    transform: translate(-50%, -50%) rotate(-90deg);
+    
+    z-index: 10;
+    
+    }
+.center2 p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+}
+
+.center3{
+    position:absolute;
+    
+    
+    width: 25vw;
+    height: auto;
+    
+    text-align: center;
+    margin-left: 75%;
+    margin-top: 125.5%;
+    padding: 2%;
+    
+    
+    transform: translate(-50%, -50%) rotate(-90deg);
+    
+    z-index: 10;
+    
+    }
+.center3 img{
+    
+}
+
+
+.center4{
+    position:absolute;
+    
+    background-color: white;
+    width: 25vw;
+    height: auto;
+    
+    text-align: justify;
+    margin-left: 25%;
+    margin-top: 160.5%;
+    padding: 2%;
+    
+    
+    transform: translate(-50%, -50%) rotate(-90deg);
+    
+    z-index: 10;
+    
+    }
+.center4 p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+}
+
+
+.center5{
+    position:absolute;
+    
+    background-color: white;
+    width: 27vw;
+    height: auto;
+    
+    text-align: justify;
+    margin-left: 75%;
+    margin-top: 195.5%;
+    padding: 2%;
+    
+    
+    transform: translate(-50%, -50%) rotate(-90deg);
+    
+    z-index: 10;
+    
+    }
+.center5 p{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+}
+
+.space{
+    margin-top: 280.5%;
+    position: absolute;
+    width: 50%;
+    height: 10px;
+
+}
+
+
+.back{
+    position: absolute;
+    display: grid;
+    overflow: hidden;
+  
+    /**background-color: purple;*/
+    width: 100vh;
+    height: 100vw;
+    font-size: 10.5em;
+    text-align: justify;
+   margin-left: 50%;
+    margin-top: 50vh;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    
+    
+    
+    }
+
+    .back p{
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: 'Playfair Display', serif;
+        font-size: 0.98em;
+        border-bottom: 1px black solid;
+       
+    }
+
+   

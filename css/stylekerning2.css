@@ -1,0 +1,1283 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #eee;
+    color: #2b2b2b;
+    overflow-x: hidden;
+}
+
+
+/* Firefox */
+body {
+    scrollbar-width: thick;
+    /* none | auto  */
+    scrollbar-color: #2b2b2b #eee;
+}
+
+/* The first applies to the thumb of the scrollbar, the second to the track. */
+/* Firefox */
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+    width: 9px;
+    /* vertical scrollbar */
+    height: 14px;
+    /* horizontal scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0032eb;
+    border-radius: 14px;
+    border: calc(14px / 4) solid #ccc;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #0032eb;
+}
+
+@-webkit-keyframes myanim {
+    0% {
+        letter-spacing: 0;
+        line-height: 1.65rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    100% {
+        letter-spacing: -4px;
+        line-height: 0.9rem;
+        width: 50%;
+        margin-top: 20vh;
+    }
+}
+
+@keyframes myanim {
+    0% {
+        letter-spacing: 0;
+        line-height: 1.65rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    100% {
+        letter-spacing: -4px;
+        line-height: 0.9rem;
+        width: 50%;
+        margin-top: 20vh;
+    }
+}
+
+@keyframes opacidade {
+    0% {
+        display: none;
+        opacity: 0%;
+    }
+
+    10% {
+        display: block;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.tituloAB {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -7;
+}
+
+.tabelaTitulo {
+    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -6;
+}
+
+.linha {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: -15vh;
+}
+
+.linha1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-top: -5vh;
+}
+
+.linha3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    margin-top: -15vh;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-content: space-between;
+}
+
+.caixaTexto {
+    margin-top: 10%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-content: space-between;
+}
+
+.alta {
+    font-size: 15rem;
+    font-weight: 800;
+    margin-left: 0%;
+    margin-top: 5vh;
+    opacity: 0%;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    z-index: -4;
+}
+
+.eCom {
+    margin-top: 23vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8rem;
+    color: blue;
+    font-weight: 800;
+    opacity: 0%;
+    animation: opacidade 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 9.5s;
+    z-index: -4;
+}
+
+.baixa {
+    margin-top: 25vh;
+    font-size: 15rem;
+    font-weight: 800;
+    opacity: 0%;
+    margin-right: 0%;
+    margin-left: auto;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8.5s;
+    z-index: -4;
+}
+
+/*
+.alta {
+    font-size: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 8rem;
+    font-weight: 800;
+    opacity: 0%;
+    width: auto;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    z-index: -4;
+}
+
+.eCom {
+    font-size: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    color: blue;
+    margin-top: 18vh;
+    line-height: 3rem;
+    font-weight: 800;
+    opacity: 0%;
+    animation: opacidade 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 9.5s;
+    z-index: -4;
+}
+
+.baixa {
+    font-size: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 8rem;
+    margin-top: 23vh;
+    width: auto;
+    font-weight: 800;
+    opacity: 0%;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8.5s;
+    z-index: -4;
+}*/
+
+.textBox {
+    -webkit-animation: myanim 4s;
+    animation: myanim 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: serif;
+    overflow: hidden;
+}
+
+.textKerning1 {
+    font-size: 1rem;
+    -webkit-animation: myanim4s;
+    animation: myanim 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: serif;
+}
+
+
+.textKerning2 {
+    font-size: 1rem;
+    -webkit-animation: myanim 45s;
+    animation: myanim 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: serif;
+}
+
+@keyframes fallAB {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1000px);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1000px);
+    }
+}
+
+.palavrasCair {
+    animation: fall 1.3s forwards;
+    animation-delay: 7.5s;
+    overflow: hidden;
+}
+
+.aFall {
+    animation: fallAB 3s forwards;
+    animation-delay: 6s;
+    display: inline-block;
+    overflow: hidden;
+    color: blue;
+    font-weight: 800;
+}
+
+.bFall {
+    animation: fallAB 3s forwards;
+    animation-delay: 6s;
+    display: inline-block;
+    overflow: hidden;
+    color: blue;
+    font-weight: 800;
+}
+
+/* ---- particles.js container ---- */
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    margin: 0;
+    z-index: -1;
+    color: "#0032eb";
+}
+
+h1 {
+    font-size: 7rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+
+.and {
+    color: #6e6e6e;
+}
+
+.navegacao {
+    width: 100%;
+    margin: auto;
+    background-color: none;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navmenu {
+    background-color: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    color: #2b2b2b;
+    background-color: none;
+}
+
+a:hover {
+    color: #6e6e6e;
+    font-weight: bolder;
+    transition: ease 0.7s;
+    border-bottom: 2px solid #6e6e6e;
+    background-color: none;
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+#div1 {
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+}
+
+.container h1:hover {
+    cursor: move;
+}
+
+.container p{
+    width: 12vw;
+}
+
+.container p:hover {
+    cursor: move;
+}
+
+.container {
+    width: 100%;
+   
+
+}
+
+/* draggable items */
+[data-draggable="item"] {
+    list-style-type: none;
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+    font-size: 100px;
+    margin: 0 0 2px 0;
+    padding: 0.2em 0.4em;
+}
+
+
+
+
+
+.botaoPrint {
+    position: absolute;
+    top: 1700px;
+    left: 75vw;
+}
+
+canvas {
+    position: absolute;
+    margin-bottom: 0;
+    top: 100vh;
+    width: 100vw;
+}
+
+.reason1{
+width: 100%;
+height: 100vh;
+
+}
+.reason2{
+    width: 100%;
+    height: 100vh;    
+ }
+
+ .reason3{
+    width: 100%;
+    height: 100vh;    
+}
+
+.reason4{
+    width: 100%;
+    height: 100vh;    
+}
+
+.reason5{
+    width: 100%;
+    height: 100vh;    
+}
+.reason6{
+    width: 100%;
+    height: 100vh;    
+}
+.reason7{
+    width: 100%;
+    height: 100vh;    
+}
+
+
+
+
+
+
+
+/* Textos primeira razao*/
+.pos1 {
+    position: relative;
+    top: 134.16666666666666vh;
+    left: 20.46875vw;
+}
+
+.pos2 {
+    position: absolute;
+    top: 157.87037037037035vh;
+    left: 50.05208333333333vw;
+}
+
+.pos3 {
+    position: absolute;
+    top: 185.74074074074073vh;
+    left: 62.760416666666664vw;
+}
+
+.pos4 {
+    position: absolute;
+    top: 157.4074074074074vh;
+    left: 15.833333333333332vw;
+}
+
+.pos5 {
+    position: absolute;
+    top: 163.14814814814812vh;
+    left: 64.47916666666667vw;
+}
+
+.pos6 {
+    position: absolute;
+    top: 194.16666666666666vh;
+    left: 23.020833333333332vw;
+    
+}
+
+/* Textos razao 2*/
+.pos7 {
+    position: absolute;
+    top: 224.62962962962962vh;
+    left: 19.947916666666668vw;
+    
+}
+
+.pos8 {
+    position: absolute;
+    top: 224.7222222222222vh;
+    left: 70.05208333333334vw;
+  
+}
+
+.pos9 {
+    position: absolute;
+    top: 246.48148148148147vh;
+    left: 36.354166666666664vw;
+    
+}
+
+.pos10 {
+    position: absolute;
+    top: 258.3333333333333vh;
+    left: 66.5625vw;
+
+}
+
+.pos11 {
+    position: absolute;
+    top: 276.66666666666663vh;
+    left: 43.802083333333336vw;
+  
+}
+
+.pos12 {
+    position: absolute;
+    top: 217.77777777777777vh;
+    left: 43.802083333333336vw;
+}
+
+.pos13 {
+    position: absolute;
+    top: 240.55555555555554vh;
+    left: 56.041666666666664vw;
+    
+}
+
+.pos14 {
+    position: absolute;
+    top: 265.8333333333333vh;
+    left: 16.302083333333332vw;
+}
+
+
+.pos15 {
+    position: absolute;
+    top: 279.16666666666663vh;
+    left: 78.17708333333333vw;
+}
+
+
+/* Textos razao 3*/
+.pos16 {
+    position: absolute;
+    top: 316.1111111111111vh;
+    left: 37.395833333333336vw;
+    
+}
+
+.pos17 {
+    position: absolute;
+    top: 329.9074074074074vh;
+    left: 36.614583333333336vw;
+  
+}
+
+.pos18 {
+    position: absolute;
+    top: 330.27777777777777vh;
+    left: 51.09375000000001vw;
+    
+}
+
+.pos19 {
+    position: absolute;
+    top: 345.7407407407407vh;
+    left: 35.260416666666664vw;
+
+}
+
+.pos20 {
+    position: absolute;
+    top: 345.46296296296293vh;
+    left: 44.895833333333336vw;
+  
+}
+
+.pos21 {
+    position: absolute;
+    top: 307.77777777777777vh;
+    left: 5.9375vw;
+}
+
+.pos22 {
+    position: absolute;
+    top: 308.98148148148147vh;
+    left: 73.125vw;
+    
+}
+
+.pos23 {
+    position: absolute;
+    top: 366.29629629629625vh;
+    left: 6.302083333333333vw;
+}
+
+
+.pos24 {
+    position: absolute;
+    top: 360.7407407407407vh;
+    left: 73.59375vw;
+}
+
+
+/* Textos razao 4*/
+.pos25 {
+    position: absolute;
+    top: 402.2222222222222vh;
+    left: 4.791666666666667vw;
+}
+
+.pos26 {
+    position: absolute;
+    top: 413.6111111111111vh;
+    left: 22.135416666666664vw;
+  
+}
+
+.pos27 {
+    position: absolute;
+    top: 423.79629629629625vh;
+    left: 22.135416666666664vw;
+    
+}
+
+.pos28 {
+    position: absolute;
+    top: 433.4259259259259vh;
+    left: 25.624999999999996vw;
+
+}
+
+.pos29 {
+    position: absolute;
+    top: 444.25925925925924vh;
+    left: 47.083333333333336vw;
+  
+}
+
+.pos30 {
+    position: absolute;
+    top: 405.46296296296293vh;
+    left: 65.20833333333333vw;
+    
+}
+
+.pos31 {
+    position: absolute;
+    top: 415.09259259259255vh;
+    left: 65.20833333333333vw;
+    
+}
+
+.pos32 {
+    position: absolute;
+    top: 430.18518518518516vh;
+    left: 65.20833333333333vw;
+    
+}
+
+.pos33 {
+    position: absolute;
+    top: 443.7037037037037vh;
+    left: 65.20833333333333vw;
+   
+}
+
+/* Textos razao 5*/
+.pos53 {
+    position: absolute;
+    top: 274.84375vh;
+    left: 10.833333333333334vw;
+    
+}
+
+.pos54 {
+    position: absolute;
+    top: 277.6041666666667vh;
+    left: 52.29166666666667vw;
+}
+
+
+.pos55 {
+    position: absolute;
+    top: 281.61458333333337vh;
+    left: 68.69791666666667vw;
+}
+
+
+.pos56 {
+    position: absolute;
+    top: 295.83333333333337vh;
+    left: 43.020833333333336vw;
+    
+}
+
+.pos57 {
+    position: absolute;
+    top: 267.55208333333337vh;
+    left: 6.458333333333334vw;
+  
+}
+
+.pos58 {
+    position: absolute;
+    top: 272.65625vh;
+    left: 60.83333333333333vw;
+    
+}
+
+.pos59 {
+    position: absolute;
+    top: 284.7916666666667vh;
+    left: 41.354166666666664vw;
+
+}
+
+.pos60 {
+    position: absolute;
+    top: 287.39583333333337vh;
+    left: 43.75vw;
+  
+}
+
+.pos61 {
+    position: absolute;
+    top: 293.0729166666667vh;
+    left: 14.635416666666668vw;
+}
+
+.pos62 {
+    position: absolute;
+    top: 301.61458333333337vh;
+    left: 78.48958333333333vw;
+}
+
+/* Textos razao 6*/
+.pos34 {
+    position: absolute;
+    top: 323.90625vh;
+    left: 11.71875vw;
+}
+
+
+.pos35 {
+    position: absolute;
+    top: 323.90625vh;
+    left: 36.614583333333336vw;
+} 
+
+.pos36 {
+    position: absolute;
+    top: 321.61458333333337vh;
+    left: 51.354166666666664vw;
+    
+}
+
+.pos37 {
+    position: absolute;
+    top: 323.90625vh;
+    left: 69.6875vw;
+  
+}
+
+.pos38 {
+    position: absolute;
+    top: 315.67708333333337vh;
+    left: 11.71875vw;
+    
+}
+
+.pos39 {
+    position: absolute;
+    top: 329.53125vh;
+    left: 51.354166666666664vw;
+
+}
+
+.pos40 {
+    position: absolute;
+    top: 332.03125vh;
+    left: 51.354166666666664vw;
+  
+}
+
+.pos41 {
+    position: absolute;
+    top: 334.58333333333337vh;
+    left: 51.354166666666664vw;
+}
+
+.pos42 {
+    position: absolute;
+    top: 352.70833333333337vh;
+    left: 80.72916666666666vw;
+    
+}
+
+/* Textos razao 7*/
+.pos43 {
+    position: absolute;
+    top: 366.875vh;
+    left: 2.7604166666666665vw;
+}
+
+.pos44 {
+    position: absolute;
+    top: 373.5416666666667vh;
+    left: 18.854166666666668vw;
+}
+
+
+.pos45 {
+    position: absolute;
+    top: 380.15625vh;
+    left: 12.34375vw;
+    
+}
+
+
+.pos46 {
+    position: absolute;
+    top: 386.40625vh;
+    left: 29.531249999999996vw;
+    
+}
+
+.pos47 {
+    position: absolute;
+    top: 392.65625vh;
+    left: 30.9375vw;
+  
+}
+
+.pos48 {
+    position: absolute;
+    top: 366.875vh;
+    left: 44.114583333333336vw;
+    
+}
+
+.pos49 {
+    position: absolute;
+    top: 373.5416666666667vh;
+    left: 55.104166666666664vw;
+
+}
+
+.pos50 {
+    position: absolute;
+    top: 380.15625vh;
+    left: 59.68750000000001vw;
+  
+}
+
+.pos51 {
+    position: absolute;
+    top: 386.40625vh;
+    left: 70.46875vw;
+}
+
+.pos52 {
+    position: absolute;
+    top: 392.65625vh;
+    left: 77.23958333333333vw;
+    
+}
+
+
+/* Textos razao 8*/
+.pos63 {
+    position: absolute;
+    top: 445.9375vh;
+    left: 35.885416666666664vw;
+}
+
+.pos64 {
+    position: absolute;
+    top: 445.9375vh;
+    left: 61.04166666666667vw;
+}
+
+
+.pos65 {
+    position: absolute;
+    top: 445.9375vh;
+    left: 71.14583333333333vw;
+    
+}
+
+
+.pos66 {
+    position: absolute;
+    top: 417.4479166666667vh;
+    left: 12.239583333333332vw;
+    
+}
+
+.pos67 {
+    position: absolute;
+    top: 420vh;
+    left: 12.239583333333332vw;
+  
+}
+
+.pos68 {
+    position: absolute;
+    top: 423.8541666666667vh;
+    left: 12.239583333333332vw;
+    
+}
+
+
+/* Textos razao 9*/
+.pos69 {
+    position: absolute;
+    top: 482.55208333333337vh;
+    left: 44.21875vw;
+
+}
+
+.pos70 {
+    position: absolute;
+    top: 474.21875vh;
+    left: 42.1875vw;
+  
+}
+
+.pos71 {
+    position: absolute;
+    top: 477.86458333333337vh;
+    left: 38.02083333333333vw;
+}
+
+.pos72 {
+    position: absolute;
+    top: 471.30208333333337vh;
+    left: 35.9375vw;
+}
+
+.pos73 {
+    position: absolute;
+    top: 471.9791666666667vh;
+    left: 49.427083333333336vw;
+}
+
+.pos74 {
+    position: absolute;
+    top: 476.30208333333337vh;
+    left: 59.375vw;
+}
+
+
+.pos75 {
+    position: absolute;
+    top: 480.1041666666667vh;
+    left: 68.95833333333333vw; 
+}
+
+.pos76 {
+    position: absolute;
+    top: 485.9375vh;
+    left: 71.77083333333333vw;
+    
+}
+
+.pos77 {
+    position: absolute;
+    top: 491.45833333333337vh;
+    left: 62.291666666666664vw;
+  
+}
+
+.pos78 {
+    position: absolute;
+    top: 486.09375vh;
+    left: 38.072916666666664vw;
+    
+}
+
+
+/* Textos razao 10*/
+.pos79 {
+    position: absolute;
+    top: 512.9166666666667vh;
+    left: 4.84375vw;
+
+}
+
+.pos80 {
+    position: absolute;
+    top: 547.6041666666667vh;
+    left: 44.21875vw;
+  
+}
+
+.pos81 {
+    position: absolute;
+    top: 547.6041666666667vh;
+    left: 75.41666666666667vw;
+}
+
+.pos82 {
+    position: absolute;
+    top: 516.6666666666667vh;
+    left: 79.47916666666667vw;
+}
+
+.pos83 {
+    position: absolute;
+    top: 532.3958333333334vh;
+    left: 4.84375vw;
+}
+
+.pos84 {
+    position: absolute;
+    top: 533.28125vh;
+    left: 79.47916666666667vw;
+}
+
+
+.pos85 {
+    position: absolute;
+    top: 550.0520833333334vh;
+    left: 4.84375vw;
+}
+
+
+/* Textos razao 11*/
+.pos86 {
+    position: absolute;
+    top: 579.6875vh;
+    left: 10.520833333333334vw;
+    
+}
+
+.pos87 {
+    position: absolute;
+    top: 590.2604166666667vh;
+    left: 10.520833333333334vw;
+  
+}
+
+.pos88 {
+    position: absolute;
+    top: 591.09375vh;
+    left: 66.92708333333334vw;
+    
+}
+
+.pos89 {
+    position: absolute;
+    top: 571.4583333333334vh;
+    left: 42.239583333333336vw;
+}
+
+.pos90 {
+    position: absolute;
+    top: 573.8541666666667vh;
+    left: 42.239583333333336vw;
+  
+}
+
+.pos91 {
+    position: absolute;
+    top: 581.25vh;
+    left: 42.239583333333336vw;
+}
+
+.pos92 {
+    position: absolute;
+    top: 590.625vh;
+    left: 66.92708333333334vw;
+}
+
+.pos93 {
+    position: absolute;
+    top: 575.2083333333334vh;
+    left: 81.09375vw;
+}
+
+
+/* Textos razao 12*/
+.pos94 {
+    position: absolute;
+    top: 625.5729166666667vh;
+    left: -1.0416666666666665vw;
+}
+
+
+.pos95 {
+    position: absolute;
+    top: 630.1041666666667vh;
+    left: -1.0416666666666665vw;   
+}
+
+.pos96 {
+    position: absolute;
+    top: 636.875vh;
+    left: -1.0416666666666665vw;
+    
+}
+
+.pos97 {
+    position: absolute;
+    top: 642.7083333333334vh;
+    left: -1.0416666666666665vw;
+  
+}
+
+.pos98 {
+    position: absolute;
+    top: 646.5104166666667vh;
+    left: 28.020833333333332vw;
+    
+}
+
+.pos99 {
+    position: absolute;
+    top: 628.0729166666667vh;
+    left: 34.375vw;
+}
+
+.pos100 {
+    position: absolute;
+    top: 631.4583333333334vh;
+    left: 34.375vw;
+  
+}
+
+.pos101 {
+    position: absolute;
+    top: 634.6875vh;
+    left: 34.375vw;
+}
+
+.pos102 {
+    position: absolute;
+    top: 637.7604166666667vh;
+    left: 34.375vw;
+}
+
+.pos103 {
+    position: absolute;
+    top: 649.0104166666667vh;
+    left: 34.375vw;
+}
+
+
+/* Textos razao 13*/
+.pos104 {
+    position: absolute;
+    top: 675.1041666666667vh;
+    left: 8.697916666666666vw;
+}
+
+
+.pos105 {
+    position: absolute;
+    top: 675.1041666666667vh;
+    left: 71.66666666666667vw;
+}
+
+.pos106 {
+    position: absolute;
+    top: 688.6458333333334vh;
+    left: 71.66666666666667vw;
+
+}
+
+.pos107 {
+    position: absolute;
+    top: 699.6875vh;
+    left: 71.66666666666667vw;
+
+}
+
+.pos108 {
+    position: absolute;
+    top: 684.3229166666667vh;
+    left: 8.697916666666666vw;
+
+}
+
+.pos109 {
+    position: absolute;
+    top: 684.3229166666667vh;
+    left: 25.260416666666668vw;
+}
+
+.pos110 {
+    position: absolute;
+    top: 684.3229166666667vh;
+    left: 45.05208333333333vw;
+
+}
+
+.pos111 {
+    position: absolute;
+    top: 695.3125vh;
+    left: 8.697916666666666vw;
+}
+
+.pos112 {
+    position: absolute;
+    top: 695.3125vh;
+    left: 25.260416666666668vw;
+}
+
+.pos113 {
+    position: absolute;
+    top: 695.3125vh;
+    left: 45.05208333333333vw;
+}
+
+.pos114 {
+    position: absolute;
+    top: 704.1666666666667vh;
+    left: 8.697916666666666vw;
+}
+
+
+.pos115 {
+    position: absolute;
+    top: 704.1666666666667vh;
+    left: 25.260416666666668vw;
+}
+
+.pos116 {
+    position: absolute;
+    top: 704.1666666666667vh;
+    left: 45.05208333333333vw;
+
+}
+
+.pos117 {
+    position: absolute;
+    top: 711.40625vh;
+    left: 83.54166666666667vw;
+
+}

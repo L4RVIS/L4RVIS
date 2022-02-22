@@ -1,0 +1,1365 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #eee;
+    color: #2b2b2b;
+    overflow-x: hidden;
+}
+
+
+/* Firefox */
+body {
+    scrollbar-width: thick;
+    /* none | auto  */
+    scrollbar-color: #2b2b2b #eee;
+}
+
+/* The first applies to the thumb of the scrollbar, the second to the track. */
+/* Firefox */
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+    width: 9px;
+    /* vertical scrollbar */
+    height: 14px;
+    /* horizontal scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #0032eb;
+    border-radius: 14px;
+    border: calc(14px / 4) solid #ccc;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #0032eb;
+}
+
+@-webkit-keyframes myanim {
+    0% {
+        letter-spacing: 0;
+        line-height: 1.65rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    100% {
+        letter-spacing: -4px;
+        line-height: 0.9rem;
+        width: 50%;
+        margin-top: 20vh;
+    }
+}
+
+@keyframes myanim {
+    0% {
+        letter-spacing: 0;
+        line-height: 1.65rem;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    100% {
+        letter-spacing: -4px;
+        line-height: 0.9rem;
+        width: 50%;
+        margin-top: 20vh;
+    }
+}
+
+@keyframes opacidade {
+    0% {
+        display: none;
+        opacity: 0%;
+    }
+
+    10% {
+        display: block;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.tituloAB {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -7;
+}
+
+.tabelaTitulo {
+    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -6;
+}
+
+.linha {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: space-between;
+    margin-top: -15vh;
+}
+
+.linha1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-top: -5vh;
+}
+
+.linha3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    margin-top: -15vh;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-content: space-between;
+}
+
+.caixaTexto {
+    margin-top: 10%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-content: space-between;
+}
+
+.alta {
+    font-size: 15rem;
+    font-weight: 800;
+    margin-left: 0%;
+    margin-top: 5vh;
+    opacity: 0%;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    z-index: -4;
+}
+
+.eCom {
+    margin-top: 23vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8rem;
+    color: blue;
+    font-weight: 800;
+    opacity: 0%;
+    animation: opacidade 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 9.5s;
+    z-index: -4;
+}
+
+.baixa {
+    margin-top: 25vh;
+    font-size: 15rem;
+    font-weight: 800;
+    opacity: 0%;
+    margin-right: 0%;
+    margin-left: auto;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8.5s;
+    z-index: -4;
+}
+
+/*
+.alta {
+    font-size: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 8rem;
+    font-weight: 800;
+    opacity: 0%;
+    width: auto;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+    z-index: -4;
+}
+
+.eCom {
+    font-size: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    color: blue;
+    margin-top: 18vh;
+    line-height: 3rem;
+    font-weight: 800;
+    opacity: 0%;
+    animation: opacidade 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 9.5s;
+    z-index: -4;
+}
+
+.baixa {
+    font-size: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 8rem;
+    margin-top: 23vh;
+    width: auto;
+    font-weight: 800;
+    opacity: 0%;
+    animation: opacidade 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 8.5s;
+    z-index: -4;
+}*/
+
+.textBox {
+    -webkit-animation: myanim 4s;
+    animation: myanim 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: serif;
+    overflow: hidden;
+}
+
+.textKerning1 {
+    font-size: 1rem;
+    -webkit-animation: myanim4s;
+    animation: myanim 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: serif;
+}
+
+
+.textKerning2 {
+    font-size: 1rem;
+    -webkit-animation: myanim 45s;
+    animation: myanim 4s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: serif;
+}
+
+@keyframes fallAB {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1000px);
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1000px);
+    }
+}
+
+.palavrasCair {
+    animation: fall 1.3s forwards;
+    animation-delay: 7.5s;
+    overflow: hidden;
+}
+
+.aFall {
+    animation: fallAB 3s forwards;
+    animation-delay: 6s;
+    display: inline-block;
+    overflow: hidden;
+    color: blue;
+    font-weight: 800;
+}
+
+.bFall {
+    animation: fallAB 3s forwards;
+    animation-delay: 6s;
+    display: inline-block;
+    overflow: hidden;
+    color: blue;
+    font-weight: 800;
+}
+
+/* ---- particles.js container ---- */
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    margin: 0;
+    z-index: -1;
+    color: "#0032eb";
+}
+
+h1 {
+    font-size: 7rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+
+.and {
+    color: #6e6e6e;
+}
+
+.navegacao {
+    width: 100%;
+    margin: auto;
+    background-color: none;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navmenu {
+    background-color: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    color: #2b2b2b;
+    background-color: none;
+}
+
+a:hover {
+    color: #6e6e6e;
+    font-weight: bolder;
+    transition: ease 0.7s;
+    border-bottom: 2px solid #6e6e6e;
+    background-color: none;
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+#div1 {
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+}
+
+.container h1:hover {
+    cursor: move;
+}
+
+.container p {
+    width: 12vw;
+}
+
+.container p:hover {
+    cursor: move;
+}
+
+.container {
+    width: 100%;
+
+
+}
+
+/* draggable items */
+[data-draggable="item"] {
+    list-style-type: none;
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+    font-size: 100px;
+    margin: 0 0 2px 0;
+    padding: 0.2em 0.4em;
+}
+
+
+
+
+
+.botaoPrint {
+    position: absolute;
+    top: 1700px;
+    left: 75vw;
+}
+
+canvas {
+    position: absolute;
+    margin-bottom: 0;
+    top: 100vh;
+    width: 100vw;
+}
+
+.reason1 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 50vh;
+    background-image: url(../img/riscos/1.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.reason2 {
+    width: 100%;
+    height: 100vh;
+}
+
+.reason3 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 8vh;
+    background-image: url(../img/riscos/2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.reason4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.reason5 {
+    width: 100%;
+    height: 100vh;
+    margin-top: -18vh;
+    background-image: url(../img/riscos/3.png);
+    background-size: contain;
+    background-position: 110% center;
+    background-repeat: no-repeat;
+}
+
+.reason6 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 3vh;
+    background-image: url(../img/riscos/5.png);
+    background-size: contain;
+    background-position: 25% center;
+    background-repeat: no-repeat;
+}
+
+.reason7 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 70vh;
+    background-image: url(../img/riscos/4.png);
+    background-size: contain;
+    background-position: 35% 170%;
+    background-repeat: no-repeat;
+}
+
+.reason8 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.reason9 {
+    width: 100%;
+    height: 100vh;
+    margin-top: -40vh;
+    margin-left: -40vw;
+    background-image: url(../img/riscos/7.png);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    
+}
+
+
+.reason10 {
+    width: 100%;
+    height: 100vh;
+    margin-top: -30vh;
+    background-image: url(../img/riscos/6.png);
+    background-size: contain;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+}
+
+
+.reason11 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.reason12 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vh;
+    background-image: url(../img/riscos/believe.png);
+    background-size: contain;
+    background-position: 140% 50%;
+    background-repeat: no-repeat;
+}
+
+.reason13 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+/* Textos primeira razao*/
+.pos1 {
+    position: relative;
+    top: 1449px;
+    left: 393px;
+}
+
+.pos2 {
+    position: absolute;
+    top: 1705px;
+    left: 961px;
+}
+
+.pos3 {
+    position: absolute;
+    top: 1966px;
+    left: 1205px;
+}
+
+.pos4 {
+    position: absolute;
+    top: 1700px;
+    left: 304px;
+}
+
+.pos5 {
+    position: absolute;
+    top: 1762px;
+    left: 1238px;
+}
+
+.pos6 {
+    position: absolute;
+    top: 1970px;
+    left: 442px;
+
+}
+
+/* Textos razao 2*/
+.pos7 {
+    position: absolute;
+    top: 2426px;
+    left: 383px;
+
+}
+
+.pos8 {
+    position: absolute;
+    top: 2427px;
+    left: 1345px;
+
+}
+
+.pos9 {
+    position: absolute;
+    top: 2662px;
+    left: 698px;
+
+}
+
+.pos10 {
+    position: absolute;
+    top: 2790px;
+    left: 1278px;
+
+}
+
+.pos11 {
+    position: absolute;
+    top: 2988px;
+    left: 841px;
+
+}
+
+.pos12 {
+    position: absolute;
+    top: 2352px;
+    left: 841px;
+}
+
+.pos13 {
+    position: absolute;
+    top: 2598px;
+    left: 1076px;
+
+}
+
+.pos14 {
+    position: absolute;
+    top: 2871px;
+    left: 313px;
+}
+
+
+.pos15 {
+    position: absolute;
+    top: 3015px;
+    left: 1501px;
+}
+
+
+/* Textos razao 3*/
+.pos16 {
+    position: absolute;
+    top: 3414px;
+    left: 718px;
+
+}
+
+.pos17 {
+    position: absolute;
+    top: 3563px;
+    left: 703px;
+
+}
+
+.pos18 {
+    position: absolute;
+    top: 3567px;
+    left: 981px;
+
+}
+
+.pos19 {
+    position: absolute;
+    top: 3734px;
+    left: 677px;
+
+}
+
+.pos20 {
+    position: absolute;
+    top: 3731px;
+    left: 862px;
+
+}
+
+.pos21 {
+    position: absolute;
+    top: 3324px;
+    left: 114px;
+}
+
+.pos22 {
+    position: absolute;
+    top: 3337px;
+    left: 1404px;
+
+}
+
+.pos23 {
+    position: absolute;
+    top: 3956px;
+    left: 121px;
+}
+
+
+.pos24 {
+    position: absolute;
+    top: 3896px;
+    left: 1413px;
+}
+
+
+/* Textos razao 4*/
+.pos25 {
+    position: absolute;
+    top: 4344px;
+    left: 92px;
+}
+
+.pos26 {
+    position: absolute;
+    top: 4467px;
+    left: 425px;
+
+}
+
+.pos27 {
+    position: absolute;
+    top: 4577px;
+    left: 425px;
+
+}
+
+.pos28 {
+    position: absolute;
+    top: 4681px;
+    left: 492px;
+
+}
+
+.pos29 {
+    position: absolute;
+    top: 4798px;
+    left: 904px;
+
+}
+
+.pos30 {
+    position: absolute;
+    top: 4379px;
+    left: 1252px;
+
+}
+
+.pos31 {
+    position: absolute;
+    top: 4483px;
+    left: 1252px;
+
+}
+
+.pos32 {
+    position: absolute;
+    top: 4646px;
+    left: 1252px;
+
+}
+
+.pos33 {
+    position: absolute;
+    top: 4792px;
+    left: 1252px;
+
+}
+
+/* Textos razao 5*/
+.pos53 {
+    position: absolute;
+    top: 5277px;
+    left: 208px;
+
+}
+
+.pos54 {
+    position: absolute;
+    top: 5330px;
+    left: 1004px;
+}
+
+
+.pos55 {
+    position: absolute;
+    top: 5407px;
+    left: 1319px;
+}
+
+
+.pos56 {
+    position: absolute;
+    top: 5680px;
+    left: 826px;
+
+}
+
+.pos57 {
+    position: absolute;
+    top: 5137px;
+    left: 124px;
+
+}
+
+.pos58 {
+    position: absolute;
+    top: 5235px;
+    left: 1168px;
+
+}
+
+.pos59 {
+    position: absolute;
+    top: 5468px;
+    left: 794px;
+
+}
+
+.pos60 {
+    position: absolute;
+    top: 5518px;
+    left: 840px;
+
+}
+
+.pos61 {
+    position: absolute;
+    top: 5627px;
+    left: 281px;
+}
+
+.pos62 {
+    position: absolute;
+    top: 5791px;
+    left: 1507px;
+}
+
+/* Textos razao 6*/
+.pos34 {
+    position: absolute;
+    top: 6219px;
+    left: 225px;
+}
+
+
+.pos35 {
+    position: absolute;
+    top: 6219px;
+    left: 703px;
+}
+
+.pos36 {
+    position: absolute;
+    top: 6175px;
+    left: 986px;
+
+}
+
+.pos37 {
+    position: absolute;
+    top: 6219px;
+    left: 1338px;
+
+}
+
+.pos38 {
+    position: absolute;
+    top: 6061px;
+    left: 225px;
+
+}
+
+.pos39 {
+    position: absolute;
+    top: 6327px;
+    left: 986px;
+
+}
+
+.pos40 {
+    position: absolute;
+    top: 6375px;
+    left: 986px;
+
+}
+
+.pos41 {
+    position: absolute;
+    top: 6424px;
+    left: 986px;
+}
+
+.pos42 {
+    position: absolute;
+    top: 6772px;
+    left: 1550px;
+
+}
+
+/* Textos razao 7*/
+.pos43 {
+    position: absolute;
+    top: 7044px;
+    left: 53px;
+}
+
+.pos44 {
+    position: absolute;
+    top: 7172px;
+    left: 362px;
+}
+
+
+.pos45 {
+    position: absolute;
+    top: 7299px;
+    left: 237px;
+
+}
+
+
+.pos46 {
+    position: absolute;
+    top: 7419px;
+    left: 567px;
+
+}
+
+.pos47 {
+    position: absolute;
+    top: 7539px;
+    left: 594px;
+
+}
+
+.pos48 {
+    position: absolute;
+    top: 7044px;
+    left: 847px;
+
+}
+
+.pos49 {
+    position: absolute;
+    top: 7172px;
+    left: 1058px;
+
+}
+
+.pos50 {
+    position: absolute;
+    top: 7299px;
+    left: 1146px;
+
+}
+
+.pos51 {
+    position: absolute;
+    top: 7419px;
+    left: 1353px;
+}
+
+.pos52 {
+    position: absolute;
+    top: 7539px;
+    left: 1483px;
+
+}
+
+
+/* Textos razao 8*/
+.pos63 {
+    position: absolute;
+    top: 8562px;
+    left: 689px;
+}
+
+.pos64 {
+    position: absolute;
+    top: 8562px;
+    left: 1172px;
+}
+
+
+.pos65 {
+    position: absolute;
+    top: 8562px;
+    left: 1366px;
+
+}
+
+
+.pos66 {
+    position: absolute;
+    top: 8015px;
+    left: 235px;
+
+}
+
+.pos67 {
+    position: absolute;
+    top: 8064px;
+    left: 235px;
+
+}
+
+.pos68 {
+    position: absolute;
+    top: 8138px;
+    left: 235px;
+
+}
+
+
+/* Textos razao 9*/
+.pos69 {
+    position: absolute;
+    top: 9265px;
+    left: 849px;
+
+}
+
+.pos70 {
+    position: absolute;
+    top: 9105px;
+    left: 810px;
+
+}
+
+.pos71 {
+    position: absolute;
+    top: 9175px;
+    left: 730px;
+}
+
+.pos72 {
+    position: absolute;
+    top: 9049px;
+    left: 690px;
+}
+
+.pos73 {
+    position: absolute;
+    top: 9062px;
+    left: 949px;
+}
+
+.pos74 {
+    position: absolute;
+    top: 9145px;
+    left: 1140px;
+}
+
+
+.pos75 {
+    position: absolute;
+    top: 9218px;
+    left: 1324px;
+}
+
+.pos76 {
+    position: absolute;
+    top: 9330px;
+    left: 1378px;
+
+}
+
+.pos77 {
+    position: absolute;
+    top: 9436px;
+    left: 1196px;
+
+}
+
+.pos78 {
+    position: absolute;
+    top: 9333px;
+    left: 731px;
+
+}
+
+
+/* Textos razao 10*/
+.pos79 {
+    position: absolute;
+    top: 9848px;
+    left: 93px;
+
+}
+
+.pos80 {
+    position: absolute;
+    top: 10514px;
+    left: 849px;
+
+}
+
+.pos81 {
+    position: absolute;
+    top: 10514px;
+    left: 1448px;
+}
+
+.pos82 {
+    position: absolute;
+    top: 9920px;
+    left: 1526px;
+}
+
+.pos83 {
+    position: absolute;
+    top: 10222px;
+    left: 93px;
+}
+
+.pos84 {
+    position: absolute;
+    top: 10239px;
+    left: 1526px;
+}
+
+
+.pos85 {
+    position: absolute;
+    top: 10561px;
+    left: 93px;
+}
+
+
+/* Textos razao 11*/
+.pos86 {
+    position: absolute;
+    top: 11130px;
+    left: 202px;
+
+}
+
+.pos87 {
+    position: absolute;
+    top: 11333px;
+    left: 202px;
+
+}
+
+.pos88 {
+    position: absolute;
+    top: 11349px;
+    left: 1285px;
+
+}
+
+.pos89 {
+    position: absolute;
+    top: 10972px;
+    left: 811px;
+}
+
+.pos90 {
+    position: absolute;
+    top: 11018px;
+    left: 811px;
+
+}
+
+.pos91 {
+    position: absolute;
+    top: 11160px;
+    left: 811px;
+}
+
+.pos92 {
+    position: absolute;
+    top: 11340px;
+    left: 1285px;
+}
+
+.pos93 {
+    position: absolute;
+    top: 11044px;
+    left: 1557px;
+}
+
+
+/* Textos razao 12*/
+.pos94 {
+    position: absolute;
+    top: 12011px;
+    left: -20px;
+}
+
+
+.pos95 {
+    position: absolute;
+    top: 12098px;
+    left: -20px;
+}
+
+.pos96 {
+    position: absolute;
+    top: 12228px;
+    left: -20px;
+
+}
+
+.pos97 {
+    position: absolute;
+    top: 12340px;
+    left: -20px;
+
+}
+
+.pos98 {
+    position: absolute;
+    top: 12413px;
+    left: 538px;
+
+}
+
+.pos99 {
+    position: absolute;
+    top: 12059px;
+    left: 660px;
+}
+
+.pos100 {
+    position: absolute;
+    top: 12124px;
+    left: 660px;
+
+}
+
+.pos101 {
+    position: absolute;
+    top: 12186px;
+    left: 660px;
+}
+
+.pos102 {
+    position: absolute;
+    top: 12245px;
+    left: 660px;
+}
+
+.pos103 {
+    position: absolute;
+    top: 12461px;
+    left: 660px;
+}
+
+/* Textos razao 13*/
+.pos104 {
+    position: absolute;
+    top: 12962px;
+    left: 167px;
+}
+
+
+.pos105 {
+    position: absolute;
+    top: 12962px;
+    left: 1376px;
+}
+
+.pos106 {
+    position: absolute;
+    top: 13222px;
+    left: 1376px;
+
+}
+
+.pos107 {
+    position: absolute;
+    top: 13434px;
+    left: 1376px;
+
+}
+
+.pos108 {
+    position: absolute;
+    top: 13139px;
+    left: 167px;
+
+}
+
+.pos109 {
+    position: absolute;
+    top: 13139px;
+    left: 485px;
+}
+
+.pos110 {
+    position: absolute;
+    top: 13139px;
+    left: 865px;
+
+}
+
+.pos111 {
+    position: absolute;
+    top: 13350px;
+    left: 167px;
+}
+
+.pos112 {
+    position: absolute;
+    top: 13350px;
+    left: 485px;
+}
+
+.pos113 {
+    position: absolute;
+    top: 13350px;
+    left: 865px;
+}
+
+.pos114 {
+    position: absolute;
+    top: 13520px;
+    left: 167px;
+}
+
+
+.pos115 {
+    position: absolute;
+    top: 13520px;
+    left: 485px;
+}
+
+.pos116 {
+    position: absolute;
+    top: 13520px;
+    left: 865px;
+
+}
+
+.pos117 {
+    position: absolute;
+    top: 13659px;
+    left: 1604px;
+
+}
+
+.fundoFooter {
+    position: absolute;
+    top: 13789px;
+    height: 20vh;
+    width: 100%;
+}

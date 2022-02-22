@@ -1,0 +1,218 @@
+* {
+    font-family: sans-serif;
+    color: #2b2b2b;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thick; /* none | auto  */
+  scrollbar-color: #ffa07a red;
+}
+
+/* The first applies to the thumb of the scrollbar, the second to the track. */
+/* Firefox */
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  width: 14px; /* vertical scrollbar */
+  height: 14px; /* horizontal scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffa07a;
+  border-radius: 14px;
+  border: calc(14px / 4) solid #ccc;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ff7f50;
+}
+/* Chrome, Edge, Safari */
+
+body {
+    background-color:#eee;
+}
+
+#tudo {
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+canvas {
+    height:100%;
+    background-color:#eee;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+h1 {
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 21px;
+    font-style: italic;
+}
+
+.logo {
+    float: left;
+}
+
+.and {
+    color: #6e6e6e;
+}
+
+.navbar{
+    padding-top: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 30px;
+
+}
+
+.navmenu {
+    float: right;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
+
+a:hover {
+    color: #6e6e6e;
+    font-weight: bolder;
+    transition: ease 0.7s;
+    border-bottom: 2px solid #6e6e6e;
+    
+}
+
+p {
+    font-size: 16px;
+}
+
+#div1 {
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+}
+
+.container h1:hover {
+    cursor: move;
+}
+
+.container p:hover {
+    cursor: move;
+}
+
+.entulho {
+    width: 100%;
+    height: 1300px;
+}
+
+.container {
+    width: 100%;
+}
+
+/* draggable items */
+[data-draggable="item"] {
+    list-style-type: none;
+    position: absolute;
+    z-index: 8;
+    text-align: center;
+    font-size: 100px;
+    margin: 0 0 2px 0;
+    padding: 0.2em 0.4em;
+}
+
+.pos1 {
+    position: absolute;
+    top: 1273px;
+    left: 301px;
+}
+
+.pos2 {
+    position: absolute;
+    top: 1326px;
+    left: 1233px;
+}
+
+.pos3 {
+    position: absolute;
+    top: 1524px;
+    left: 690px;
+}
+
+.pos4 {
+    position: absolute;
+    top: 1660px;
+    left: 1208px;
+}
+
+/* Textos primeira parte*/
+.pos5 {
+    position: absolute;
+    top: 1164px;
+    left: 73px;
+    width: 250px;
+}
+
+.pos6 {
+    position: absolute;
+    top: 1476px;
+    left: 362px;
+    width: 250px;
+}
+
+.pos7 {
+    position: absolute;
+    top: 1345px;
+    left: 846px;
+    width: 250px;
+}
+
+.pos8 {
+    position: absolute;
+    top: 1371px;
+    left: 893px;
+    width: 250px;
+}
+
+.pos9 {
+    position: absolute;
+    top: 1170px;
+    left: 1103px;
+    width: 250px;
+}
+
+.pos10 {
+    position: absolute;
+    top: 1559px;
+    left: 1458px;
+    width: 250px;
+}
+
+
+
+  
